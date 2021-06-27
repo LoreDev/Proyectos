@@ -1,0 +1,249 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: url('../img/fondo.png');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Open Sans', Sans-serif, Arial, Helvetica ;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor{
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	align-items:center;
+
+}
+
+.tarjeta {
+	background: white;
+	margin: 40px;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1000;
+	width: 100%;
+/*	box-shadow: 5px 5px  10px #888888;	*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*slider banner*/
+
+.slider_banner{
+	overflow: hidden;
+	z-index: 1000;
+	position: relative;
+}
+
+.slider_banner .banner{
+	position: relative;
+	width: 100%;
+}
+
+.slider_banner .banner img {
+	background-color: black;
+	vertical-align: bottom;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%
+
+}
+
+.slider_banner .flecha_banner {
+	font-size: 35px;
+	line-height: 35px;
+	color: rgba(0,0,0,0.2);
+	position: absolute;
+	top: 50%;
+	z-index: 1100;
+}
+
+.slider_banner .flecha_banner:hover{
+	color: rgba(0,0,0, .5);
+}
+
+.slider_banner .anterior{
+	left:20px;
+}
+
+.slider_banner .siguiente{
+	right:20px;
+}
+
+/*Slider Info*/
+
+.slider_info{
+	text-align: center;
+	overflow: hidden;
+	padding: 20px 0;
+	z-index: 1000;
+	position: relative;
+}
+
+/**seccion informacion*/
+
+.slider_info  .informacion {
+	width: 100%;
+}
+
+.slider_info  .informacion article {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider_info .informacion article .slide{
+	background: #fff;
+	width: 100%;
+	left: 100%;
+	position: absolute;
+	padding: 20px 40px;
+}
+
+.slider_info .flecha-info {
+	font-size: 35px;
+	line-height: 35px;
+	color:#e6e6e6;
+	position: absolute;
+	top: 50%;
+	z-index: 1000;
+
+}
+
+.slider_info .flecha-info:hover {
+	color: #6ed279;
+}
+
+.slider_info .flecha-info.anterior {
+
+	left: 20px;
+
+}
+
+.slider_info .flecha-info.siguiente {
+
+	right: 20px;
+}
+
+/*estilos para los slide de info*/
+
+.slider_info .informacion .nombre{
+	/*color: #444;*/
+	font-size: 38px;
+	line-height: 38px;
+	font-weight: 700;
+	margin-bottom: 16px;
+  	color: white;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.slider_info .informacion .trabajo{
+	color: #55acee;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom:  16px;
+}
+
+.slider_info .informacion .pais{
+	color: #8d8d8d;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+
+.slider_info .informacion .pais img{
+	position: relative;
+	top: 2px;
+	margin-right: 10px;
+}
+
+
+.slider_info .informacion .subtitulo{
+	color: #444;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+
+
+.slider_info .informacion .texto{
+	color: #55acee;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/*botones slider info*/
+
+.slider_info .botones{
+	width: 100%;
+}
+
+.slider_info .botones span{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 10px;
+	border-radius: 50%;
+	background: #e6e6e6;
+}
+
+.slider_info .botones span.active{
+	background: #6ed279;
+}	
+
+/*redes sociales*/
+
+.redes_sociales{
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.redes_sociales a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 20px;
+	padding: 14px 0;
+	color: #fff;
+	background: #000;
+	border-radius: 50%;
+	margin: 0 10px;
+
+}
+
+.redes_sociales .linkedin {
+	background: #1769ff;
+}
+
+.redes_sociales .facebook {
+	background: #3b5998;
+}
+
+.redes_sociales .twitter {
+	background: #55acee;
+}
+
+.retrato {
+	float: left;
+	width: 100px; height: 100px;
+	border-radius: 50%;
+}
+
+.slider_info .botones span:hover{
+	cursor: hand;
+	background: grey;
+}
